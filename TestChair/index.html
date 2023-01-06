@@ -81,15 +81,15 @@
 
         // model
 
-        new GLTFLoader().setPath("./").load("SheenChair.glb", function (gltf) {
+        new GLTFLoader().setPath("./").load("office.glb", function (gltf) {
           scene.add(gltf.scene);
 
-          const object = gltf.scene.getObjectByName("SheenChair_fabric");
+          // const object = gltf.scene.getObjectByName("SheenChair_fabric");
 
-          const gui = new GUI();
+          // const gui = new GUI();
 
-          gui.add(object.material, "sheen", 0, 1);
-          gui.open();
+          // gui.add(object.material, "sheen", 0, 1);
+          // gui.open();
         });
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
